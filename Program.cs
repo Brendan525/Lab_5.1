@@ -20,7 +20,7 @@ namespace Lab_5._1
 
         public virtual void Play()
         {
-            Console.WriteLine();
+            
         }
     }
 
@@ -36,6 +36,7 @@ namespace Lab_5._1
 
         public override void Play()
         {
+            //base.Play(); // Was printing twice for some reason
             Console.WriteLine($"{name} (int {intelligence}, strength {strength}, {magicalEnergy})");
         }
     }
@@ -50,6 +51,7 @@ namespace Lab_5._1
         }
         public override void Play()
         {
+            //base.Play(); // Was printing twice for some reason
             Console.WriteLine($"{name} (int {intelligence}, strength {strength}, magic {magicalEnergy}) {spellNumber} spells");
         }
     }
@@ -65,6 +67,7 @@ namespace Lab_5._1
 
         public override void Play()
         {
+            
             Console.WriteLine($"{name} (int {intelligence}, strength {strength}) {weaponType}");
         }
     }
@@ -83,7 +86,6 @@ namespace Lab_5._1
             characterList.Add(new Wizard("Peral the Magician", 17, 12, 9, 4));
 
             Console.WriteLine("Welcome to World of Dev.Buildcraft!");
-            Console.WriteLine();
 
             foreach (GameCharacter character in characterList)
             {
